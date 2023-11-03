@@ -1,0 +1,66 @@
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = 1;
+        while (a != 0) {
+            System.out.println("Pilih Menu yang akan digunakan");
+            System.out.println("1.Conversi Biner ke Decimal");
+            System.out.println("2.Conversi Biner ke hexadecimal");
+            System.out.println("3.Conversi Decimal ke biner");
+            System.out.println("4.Conversi Decimal ke hexadecimal");
+            System.out.println("5.Conversi Hexadecimal ke Biner");
+            System.out.println("6.Conversi Hexadecimal ke Decimal");
+            System.out.println("0.Keluar Menu ");
+            a = sc.nextInt();
+            switch (a) {
+                case 1:
+                    System.out.println("Masukkan angka Biner");
+                    String b = sc.next();
+                    int dec = Integer.parseInt(b, 2);
+                    System.out.println("Angka decimalnya adalah: " + dec);
+                    break;
+                case 2:
+                    System.out.println("Masukkan angka Biner");
+                    int k = sc.nextInt();
+                    String hexd = Integer.toHexString(k);
+                    System.out.println("Angka hexadecimalnya adalah: " + hexd);
+                    break;
+                case 3:
+                    System.out.println("Masukkan angka decimal");
+                    int deci = sc.nextInt();
+                    String d = Integer.toBinaryString(deci);
+                    System.out.println("Angka Binernya adalah " + d);
+                    break;
+                case 4:
+                    System.out.println("Masukkan angka decimal");
+                    int decim = sc.nextInt();
+                    String f = Integer.toHexString(decim);
+                    System.out.println("Aangka hexadecimalnya adalah: " + f);
+                    break;
+                case 5:
+                    System.out.println("Masukkan angka Hexadecimal");
+                    String r = sc.next();
+                    int y = Integer.parseInt(r,16);
+                    String o=Integer.toBinaryString(y);
+                    System.out.println("Angka Binernya adalah: " + o);
+                    break;
+                case 6:
+                    System.out.println("Masukkan angka Hexadecimal");
+                    String p = sc.next();
+                    int decima = Integer.parseInt(p, 16);
+                    System.out.println("Angka decimalnya adalah: " + decima);
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("Pilih menu yang valid");
+
+
+            }
+        }
+    }
+}
+//code title:Java Program to Convert Binary Number to Decimal and vice-versa
+//author:Unknown
+//date:Unknown
+//code version:Unknown
+//Availability : https://www.programiz.com/java-programming/examples/binary-decimal-convert
